@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const fs = require("fs");
-const { readFromFile, readAndAppend, readAndDelete} = require("../helpers/fsUtils");
+const { readFromFile, readAndAppend} = require("../helpers/fsUtils");
 const uuid = require("../helpers/uuid");
 
 //Get route to read the db.json file and return all saved notes as JSON
@@ -35,13 +35,6 @@ router.post("/notes", (req, res) =>{
 }
 });
 
-//Application allows users to delete notes.
-
- router.delete("/notes/:id", (req, res) => {
-   readAndDelete("./db/db.josn", req.params.id)
-        res.json("notes deleted");
-    
-    })
 
     module.exports = router;
 

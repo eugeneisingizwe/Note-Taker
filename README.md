@@ -50,9 +50,11 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Link To Deployed Webpage
 
+https://enigmatic-falls-91353.herokuapp.com/notes
+
 
 ## Mock Up
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
+![](./public/assets/image/screenshot.png)
 
 ## Credits
 
